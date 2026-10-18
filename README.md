@@ -59,7 +59,7 @@ GraphLab-Submission/
 ├── source-code/       # ứng dụng React + TypeScript + Vite
 ├── testcases/         # 26 fixture, runner, kết quả và trace mẫu
 ├── report/            # Word và PDF
-└── video-demo/        # video React tôi đang edit sẽ tải lên vào ngày 19/10/2026 và bổ sung link vào github sau.
+└── video-demo/        # video React tôi đang edit sẽ tải lên vào ngày 19/10/2026 lúc 2 giờ sáng và bổ sung link vào github sau.
 ```
 
 ## Giới hạn đã biết
