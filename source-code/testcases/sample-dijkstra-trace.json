@@ -1,0 +1,1120 @@
+{
+  "algorithm": "Dijkstra",
+  "start": "A",
+  "goal": "F",
+  "totalCost": 13,
+  "path": [
+    "A",
+    "C",
+    "B",
+    "D",
+    "E",
+    "F"
+  ],
+  "visitedCount": 6,
+  "edgeChecks": 16,
+  "steps": [
+    {
+      "uiStep": 1,
+      "title": "Khởi tạo",
+      "detail": "Đặt khoảng cách từ A đến chính nó bằng 0.",
+      "current": "A",
+      "frontier": [
+        "A"
+      ],
+      "visited": [],
+      "distances": {
+        "A": 0,
+        "B": "∞",
+        "C": "∞",
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 2,
+      "title": "Chọn đỉnh A",
+      "detail": "Đỉnh chưa cố định có khoảng cách tạm thời nhỏ nhất là A (0).",
+      "current": "A",
+      "frontier": [],
+      "visited": [
+        "A"
+      ],
+      "distances": {
+        "A": 0,
+        "B": "∞",
+        "C": "∞",
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 3,
+      "title": "Nới lỏng cạnh A → B",
+      "detail": "So sánh 0 + 4 với khoảng cách hiện tại của B.",
+      "current": "A",
+      "frontier": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A"
+      ],
+      "distances": {
+        "A": 0,
+        "B": "∞",
+        "C": "∞",
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 4,
+      "title": "Cập nhật khoảng cách B",
+      "detail": "Cập nhật dist[B] = 4; cha của B là A.",
+      "current": "A",
+      "frontier": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 4,
+        "C": "∞",
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "A",
+        "C": null,
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 5,
+      "title": "Nới lỏng cạnh A → C",
+      "detail": "So sánh 0 + 2 với khoảng cách hiện tại của C.",
+      "current": "A",
+      "frontier": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 4,
+        "C": "∞",
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "A",
+        "C": null,
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 6,
+      "title": "Cập nhật khoảng cách C",
+      "detail": "Cập nhật dist[C] = 2; cha của C là A.",
+      "current": "A",
+      "frontier": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 4,
+        "C": 2,
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "A",
+        "C": "A",
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 7,
+      "title": "Chọn đỉnh C",
+      "detail": "Đỉnh chưa cố định có khoảng cách tạm thời nhỏ nhất là C (2).",
+      "current": "C",
+      "frontier": [
+        "B"
+      ],
+      "visited": [
+        "A",
+        "C"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 4,
+        "C": 2,
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "A",
+        "C": "A",
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 8,
+      "title": "Nới lỏng cạnh C → A",
+      "detail": "So sánh 2 + 2 với khoảng cách hiện tại của A.",
+      "current": "C",
+      "frontier": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 4,
+        "C": 2,
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "A",
+        "C": "A",
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 9,
+      "title": "Nới lỏng cạnh C → B",
+      "detail": "So sánh 2 + 1 với khoảng cách hiện tại của B.",
+      "current": "C",
+      "frontier": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 4,
+        "C": 2,
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "A",
+        "C": "A",
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 10,
+      "title": "Cập nhật khoảng cách B",
+      "detail": "Cập nhật dist[B] = 3; cha của B là C.",
+      "current": "C",
+      "frontier": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 11,
+      "title": "Nới lỏng cạnh C → D",
+      "detail": "So sánh 2 + 8 với khoảng cách hiện tại của D.",
+      "current": "C",
+      "frontier": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": "∞",
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": null,
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 12,
+      "title": "Cập nhật khoảng cách D",
+      "detail": "Cập nhật dist[D] = 10; cha của D là C.",
+      "current": "C",
+      "frontier": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 10,
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "C",
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 13,
+      "title": "Nới lỏng cạnh C → E",
+      "detail": "So sánh 2 + 10 với khoảng cách hiện tại của E.",
+      "current": "C",
+      "frontier": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 10,
+        "E": "∞",
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "C",
+        "E": null,
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 14,
+      "title": "Cập nhật khoảng cách E",
+      "detail": "Cập nhật dist[E] = 12; cha của E là C.",
+      "current": "C",
+      "frontier": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 10,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "C",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 15,
+      "title": "Chọn đỉnh B",
+      "detail": "Đỉnh chưa cố định có khoảng cách tạm thời nhỏ nhất là B (3).",
+      "current": "B",
+      "frontier": [
+        "D",
+        "E"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 10,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "C",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 16,
+      "title": "Nới lỏng cạnh B → A",
+      "detail": "So sánh 3 + 4 với khoảng cách hiện tại của A.",
+      "current": "B",
+      "frontier": [
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 10,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "C",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 17,
+      "title": "Nới lỏng cạnh B → C",
+      "detail": "So sánh 3 + 1 với khoảng cách hiện tại của C.",
+      "current": "B",
+      "frontier": [
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 10,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "C",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 18,
+      "title": "Nới lỏng cạnh B → D",
+      "detail": "So sánh 3 + 5 với khoảng cách hiện tại của D.",
+      "current": "B",
+      "frontier": [
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 10,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "C",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 19,
+      "title": "Cập nhật khoảng cách D",
+      "detail": "Cập nhật dist[D] = 8; cha của D là B.",
+      "current": "B",
+      "frontier": [
+        "D",
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 20,
+      "title": "Chọn đỉnh D",
+      "detail": "Đỉnh chưa cố định có khoảng cách tạm thời nhỏ nhất là D (8).",
+      "current": "D",
+      "frontier": [
+        "E"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 21,
+      "title": "Nới lỏng cạnh D → B",
+      "detail": "So sánh 8 + 5 với khoảng cách hiện tại của B.",
+      "current": "D",
+      "frontier": [
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 22,
+      "title": "Nới lỏng cạnh D → C",
+      "detail": "So sánh 8 + 8 với khoảng cách hiện tại của C.",
+      "current": "D",
+      "frontier": [
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 23,
+      "title": "Nới lỏng cạnh D → E",
+      "detail": "So sánh 8 + 2 với khoảng cách hiện tại của E.",
+      "current": "D",
+      "frontier": [
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 12,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "C",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 24,
+      "title": "Cập nhật khoảng cách E",
+      "detail": "Cập nhật dist[E] = 10; cha của E là D.",
+      "current": "D",
+      "frontier": [
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 25,
+      "title": "Nới lỏng cạnh D → F",
+      "detail": "So sánh 8 + 6 với khoảng cách hiện tại của F.",
+      "current": "D",
+      "frontier": [
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": "∞"
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": null
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 26,
+      "title": "Cập nhật khoảng cách F",
+      "detail": "Cập nhật dist[F] = 14; cha của F là D.",
+      "current": "D",
+      "frontier": [
+        "E",
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 14
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "D"
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 27,
+      "title": "Chọn đỉnh E",
+      "detail": "Đỉnh chưa cố định có khoảng cách tạm thời nhỏ nhất là E (10).",
+      "current": "E",
+      "frontier": [
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 14
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "D"
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 28,
+      "title": "Nới lỏng cạnh E → C",
+      "detail": "So sánh 10 + 10 với khoảng cách hiện tại của C.",
+      "current": "E",
+      "frontier": [
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 14
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "D"
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 29,
+      "title": "Nới lỏng cạnh E → D",
+      "detail": "So sánh 10 + 2 với khoảng cách hiện tại của D.",
+      "current": "E",
+      "frontier": [
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 14
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "D"
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 30,
+      "title": "Nới lỏng cạnh E → F",
+      "detail": "So sánh 10 + 3 với khoảng cách hiện tại của F.",
+      "current": "E",
+      "frontier": [
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 14
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "D"
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 31,
+      "title": "Cập nhật khoảng cách F",
+      "detail": "Cập nhật dist[F] = 13; cha của F là E.",
+      "current": "E",
+      "frontier": [
+        "F"
+      ],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 13
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "E"
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 32,
+      "title": "Chọn đỉnh F",
+      "detail": "Đỉnh chưa cố định có khoảng cách tạm thời nhỏ nhất là F (13).",
+      "current": "F",
+      "frontier": [],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 13
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "E"
+      },
+      "status": "running"
+    },
+    {
+      "uiStep": 33,
+      "title": "Đã cố định đỉnh đích",
+      "detail": "Khoảng cách ngắn nhất đến F là 13.",
+      "current": "F",
+      "frontier": [],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 13
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "E"
+      },
+      "status": "found"
+    },
+    {
+      "uiStep": 34,
+      "title": "Hoàn tất",
+      "detail": "Đường đi A → C → B → D → E → F có tổng trọng số 13.",
+      "current": "F",
+      "frontier": [],
+      "visited": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "distances": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 8,
+        "E": 10,
+        "F": 13
+      },
+      "previous": {
+        "A": null,
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D",
+        "F": "E"
+      },
+      "status": "found"
+    }
+  ]
+}

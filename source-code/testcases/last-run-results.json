@@ -1,0 +1,301 @@
+{
+  "generatedAt": "2026-10-18T16:16:48.195Z",
+  "environment": {
+    "node": "v23.9.0",
+    "mode": "algorithm-engine unit/integration tests; not a browser UI test"
+  },
+  "fixtureCases": 26,
+  "fixturePassed": 26,
+  "fixtureFailed": 0,
+  "deterministicRandomGraphChecks": 200,
+  "totalChecks": 228,
+  "passed": true,
+  "results": [
+    {
+      "id": "TC01",
+      "category": "normal",
+      "algorithm": "BFS",
+      "status": "PASS",
+      "path": "A -> B -> D",
+      "cost": 2,
+      "visited": 4,
+      "edgeChecks": 6,
+      "traceSteps": 15
+    },
+    {
+      "id": "TC02",
+      "category": "normal",
+      "algorithm": "DFS",
+      "status": "PASS",
+      "path": "A -> B -> D",
+      "cost": 2,
+      "visited": 4,
+      "edgeChecks": 5,
+      "traceSteps": 14
+    },
+    {
+      "id": "TC03",
+      "category": "weighted",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": "A -> C -> B -> D",
+      "cost": 6,
+      "visited": 4,
+      "edgeChecks": 8,
+      "traceSteps": 20
+    },
+    {
+      "id": "TC04",
+      "category": "disconnected",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 2,
+      "edgeChecks": 2,
+      "traceSteps": 7
+    },
+    {
+      "id": "TC05",
+      "category": "edge",
+      "algorithm": "BFS",
+      "status": "PASS",
+      "path": "A",
+      "cost": 0,
+      "visited": 1,
+      "edgeChecks": 0,
+      "traceSteps": 3
+    },
+    {
+      "id": "TC06",
+      "category": "edge",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": "A -> B",
+      "cost": 0,
+      "visited": 2,
+      "edgeChecks": 1,
+      "traceSteps": 7
+    },
+    {
+      "id": "TC07",
+      "category": "invalid",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 0,
+      "edgeChecks": 0,
+      "traceSteps": 1
+    },
+    {
+      "id": "TC08",
+      "category": "directed",
+      "algorithm": "BFS",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 2,
+      "edgeChecks": 1,
+      "traceSteps": 6
+    },
+    {
+      "id": "TC09",
+      "category": "normal",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": "S -> A -> B -> T",
+      "cost": 5,
+      "visited": 4,
+      "edgeChecks": 5,
+      "traceSteps": 17
+    },
+    {
+      "id": "TC10",
+      "category": "edge",
+      "algorithm": "DFS",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 2,
+      "edgeChecks": 2,
+      "traceSteps": 7
+    },
+    {
+      "id": "TC11",
+      "category": "multiple-paths",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": "A -> B -> D",
+      "cost": 3,
+      "visited": 4,
+      "edgeChecks": 6,
+      "traceSteps": 16
+    },
+    {
+      "id": "TC12",
+      "category": "larger",
+      "algorithm": "BFS",
+      "status": "PASS",
+      "path": "A -> C -> F -> H",
+      "cost": 3,
+      "visited": 8,
+      "edgeChecks": 13,
+      "traceSteps": 30
+    },
+    {
+      "id": "TC13",
+      "category": "normal",
+      "algorithm": "A*",
+      "status": "PASS",
+      "path": "A -> C -> B -> D",
+      "cost": 6,
+      "visited": 4,
+      "edgeChecks": 8,
+      "traceSteps": 20
+    },
+    {
+      "id": "TC14",
+      "category": "edge",
+      "algorithm": "A*",
+      "status": "PASS",
+      "path": "A",
+      "cost": 0,
+      "visited": 1,
+      "edgeChecks": 0,
+      "traceSteps": 4
+    },
+    {
+      "id": "TC15",
+      "category": "disconnected",
+      "algorithm": "A*",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 2,
+      "edgeChecks": 2,
+      "traceSteps": 7
+    },
+    {
+      "id": "TC16",
+      "category": "invalid",
+      "algorithm": "A*",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 0,
+      "edgeChecks": 0,
+      "traceSteps": 1
+    },
+    {
+      "id": "TC17",
+      "category": "numeric",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": "S -> A -> T",
+      "cost": 1.75,
+      "visited": 3,
+      "edgeChecks": 4,
+      "traceSteps": 13
+    },
+    {
+      "id": "TC18",
+      "category": "invalid",
+      "algorithm": "BFS",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 0,
+      "edgeChecks": 0,
+      "traceSteps": 1
+    },
+    {
+      "id": "TC19",
+      "category": "invalid",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 0,
+      "edgeChecks": 0,
+      "traceSteps": 1
+    },
+    {
+      "id": "TC20",
+      "category": "invalid",
+      "algorithm": "DFS",
+      "status": "PASS",
+      "path": null,
+      "cost": null,
+      "visited": 0,
+      "edgeChecks": 0,
+      "traceSteps": 1
+    },
+    {
+      "id": "TC21",
+      "category": "directed",
+      "algorithm": "A*",
+      "status": "PASS",
+      "path": "S -> A -> T",
+      "cost": 6,
+      "visited": 3,
+      "edgeChecks": 2,
+      "traceSteps": 10
+    },
+    {
+      "id": "TC22",
+      "category": "cycle",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": "S -> B -> T",
+      "cost": 4,
+      "visited": 4,
+      "edgeChecks": 8,
+      "traceSteps": 19
+    },
+    {
+      "id": "TC23",
+      "category": "directed",
+      "algorithm": "BFS",
+      "status": "PASS",
+      "path": "S -> A -> T",
+      "cost": 2,
+      "visited": 3,
+      "edgeChecks": 2,
+      "traceSteps": 9
+    },
+    {
+      "id": "TC24",
+      "category": "multiple-edges",
+      "algorithm": "Dijkstra",
+      "status": "PASS",
+      "path": "S -> T",
+      "cost": 2,
+      "visited": 2,
+      "edgeChecks": 2,
+      "traceSteps": 9
+    },
+    {
+      "id": "TC25",
+      "category": "numeric",
+      "algorithm": "A*",
+      "status": "PASS",
+      "path": "S -> A -> T",
+      "cost": 1,
+      "visited": 3,
+      "edgeChecks": 4,
+      "traceSteps": 13
+    },
+    {
+      "id": "TC26",
+      "category": "normal",
+      "algorithm": "DFS",
+      "status": "PASS",
+      "path": "S -> B -> T",
+      "cost": 2,
+      "visited": 3,
+      "edgeChecks": 3,
+      "traceSteps": 11
+    }
+  ]
+}

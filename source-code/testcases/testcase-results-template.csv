@@ -1,0 +1,13 @@
+Test ID,Algorithm,Category,Expected result,Actual result,Pass/Fail,Execution time (ms),Notes
+TC01,BFS,normal,"A valid path with 2 edges; exact path depends on adjacency order","","","",""
+TC02,DFS,normal,"A valid path A-B-D","","","",""
+TC03,Dijkstra,weighted,"['A', 'C', 'B', 'D']","","","",""
+TC04,Dijkstra,disconnected,"No path; cost null","","","",""
+TC05,BFS,edge,"['A']","","","",""
+TC06,Dijkstra,edge,"['A', 'B']","","","",""
+TC07,Dijkstra,invalid,"Reject negative edge weight","","","",""
+TC08,BFS,directed,"No path","","","",""
+TC09,Dijkstra,normal,"['S', 'A', 'B', 'T']","","","",""
+TC10,DFS,edge,"No path","","","",""
+TC11,Dijkstra,multiple-paths,"Either A-B-D or A-C-D; both cost 3","","","",""
+TC12,BFS,larger,"A valid path with 3 edges","","","",""

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.test-build/
+*.log
+.DS_Store
+video-demo/README.md
+TEST-RESULTS.md
+report/report-source.md
+SUBMISSION-CHECKLIST.md
+# README.md
+video-demo/RECORDING-CHECKLIST.md
+video-demo/video-script.md
