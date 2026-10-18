@@ -58,8 +58,7 @@ GraphLab-Submission/
 ├── presentation.html
 ├── source-code/       # ứng dụng React + TypeScript + Vite
 ├── testcases/         # 26 fixture, runner, kết quả và trace mẫu
-├── report/            # Word và PDF
-└── video-demo/        # video React tôi đang edit sẽ tải lên vào ngày 19/10/2026 lúc 2 giờ sáng và bổ sung link vào github sau.
+└── report/            # Word và PDF
 ```
 
 ## Giới hạn đã biết
@@ -75,3 +74,4 @@ GraphLab-Submission/
 - `report/report-source.md`: nguồn báo cáo có thể sửa.
 - `report/report.docx`: bản Word.
 - `report/tranphudat_report.pdf.pdf`: bản PDF đã render và kiểm tra bố cục.
+- `video_demo.mp4`: Video mô tả về dự án và các thuật toán sử dụng.
